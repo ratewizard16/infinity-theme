@@ -1,10 +1,161 @@
 <!DOCTYPE html>
 <html lang="tr">
 <head>
-  <meta charset="UTF-8">
-  <title>Infinity Teması</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Kurumsal Sonsuzluk Tema</title>
+<meta name="description" content="Modern ve responsive kurumsal HTML5 tema" />
+<meta name="robots" content="index,follow" />
+<meta name="author" content="Tema Geliştirici" />
+<!-- Diğer gerekli meta etiketler -->
+<style>
+  /* Temel reset ve fontlar */
+  body {
+    margin: 0; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f9f9f9; color: #333;
+  }
+  header {
+    background: url('https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    height: 300px;
+    color: white;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+  }
+  header h1 {
+    font-size: 3rem;
+  }
+  nav {
+    border-top: 4px solid #0056b3;
+    background-color: #f1f1f1;
+    padding: 0.8rem 1rem;
+  }
+  nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0; padding: 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: #0056b3;
+    font-weight: 600;
+    font-size: 1rem;
+  }
+  nav a:hover {
+    color: #003d7a;
+  }
+  main {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+  }
+  .services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 1.5rem;
+  }
+  .service-item {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  .service-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  .service-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    color: #0056b3;
+  }
+  footer {
+    background: #222;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    margin-top: 3rem;
+  }
+  @media(max-width:600px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+<!-- Font Awesome CDN (ikonlar için) -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
 </head>
 <body>
-  <h1>Merhaba Dünya</h1>
+<header>
+  <h1>Kurumsal Sonsuzluk Tema</h1>
+</header>
+
+<nav>
+  <ul>
+    <li><a href="#anasayfa">Ana Sayfa</a></li>
+    <li><a href="#hakkimizda">Hakkımızda</a></li>
+    <li><a href="#hizmetler">Hizmetler</a></li>
+    <li><a href="#sss">SSS</a></li>
+    <li><a href="#iletisim">İletişim</a></li>
+  </ul>
+</nav>
+
+<main>
+  <section id="anasayfa">
+    <h2>Ana Sayfa</h2>
+    <p>Modern, responsive ve SEO uyumlu kurumsal web teması. Tüm cihazlarda mükemmel görünür.</p>
+  </section>
+
+  <section id="hakkimizda">
+    <h2>Hakkımızda</h2>
+    <p>Profesyonel ekip ve güçlü altyapı ile iş dünyasında fark yaratıyoruz.</p>
+  </section>
+
+  <section id="hizmetler">
+    <h2>Hizmetlerimiz</h2>
+    <div class="services">
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-chart-line"></i></div>
+        <h3>Danışmanlık</h3>
+        <p>Stratejik iş planlama ve uzman danışmanlık hizmetleri.</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-cogs"></i></div>
+        <h3>Teknoloji Çözümleri</h3>
+        <p>Yenilikçi yazılım ve donanım çözümleri ile işinizi büyütün.</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-users"></i></div>
+        <h3>İnsan Kaynakları</h3>
+        <p>En iyi yetenekleri bulma ve şirketinize uygun ekip oluşturma.</p>
+      </div>
+      <div class="service-item">
+        <div class="service-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Müşteri İlişkileri</h3>
+        <p>Profesyonel destek ve müşteri memnuniyeti çözümleri.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="sss">
+    <h2>Sıkça Sorulan Sorular</h2>
+    <p>Sıkça sorulan sorular ve cevapları burada yer alacak.</p>
+  </section>
+
+  <section id="iletisim">
+    <h2>İletişim</h2>
+    <p>Bizimle iletişime geçmek için lütfen formu doldurun veya telefon numaralarımızdan ulaşın.</p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 Kurumsal Sonsuzluk Tema. Tüm hakları saklıdır.</p>
+</footer>
+
 </body>
 </html>
